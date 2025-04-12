@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="wrap">
+    <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+
+    <header>
+      <div class="heading"><h1>Habit Tracker</h1></div>
+      <button id="addHabitBtn"></button>
+    </header>
+  
+    <main>
+      <div id="habitContainer"></div>
+    </main>
+  
+    <!-- Modal for adding habit -->
+    <div id="habitModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeBtn" class="close">&times;</span>
+        <h2>Create New Habit</h2>
+        <input type="text" id="habitName" placeholder="Habit Name" />
+        <input type="text" id="habitIcon" placeholder="Icon / Emoji (optional)" />
+        <select id="habitFreq">
+          <option value="daily">Daily</option>
+          <option value="custom">Custom</option>
+        </select>
+        <button id="createHabit">Add</button>
+      </div>
+    </div>
+   </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
